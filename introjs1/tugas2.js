@@ -23,7 +23,7 @@ const scores = [
  */
 function hitungRataRataNilaiUN(scores) {
 	for (const { nilai, pelajaran } of scores) {
-		if (nilai === undefined || nilai === null) {
+		if ((nilai === undefined || nilai === null) && typeof nilai === 'number') {
 			return `${pelajaran} belum memiliki nilai. pastikan semua pelajaran sudah memiliki nilai`;
 		}
 	}
