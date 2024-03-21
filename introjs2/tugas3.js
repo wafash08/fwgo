@@ -1,8 +1,8 @@
 function seleksiNilai(nilaiAwal, nilaiAkhir, dataArray) {
 	if (typeof nilaiAwal !== 'number' || typeof nilaiAkhir !== 'number') {
-		return 'Nilai akhir harus lebih besar dari nilai awal';
-	} else if (nilaiAwal > nilaiAkhir) {
 		return 'Nilai awal dan nilai akhir harus berupa number';
+	} else if (nilaiAwal > nilaiAkhir) {
+		return 'Nilai akhir harus lebih besar dari nilai awal';
 	} else if (dataArray.length <= 5) {
 		return 'Jumlah angka dalam dataArray harus lebih dari 5';
 	} else {
