@@ -27,11 +27,11 @@ function seleksiNilai(nilaiAwal, nilaiAkhir, dataArray) {
 	}
 }
 
-console.log(seleksiNilai(5, 20, [2, 25, 4, 14, 17, 30, '8']));
+// console.log(seleksiNilai(5, 20, [2, 25, 4, 14, 17, 30, 8]));
 // Output:
 // [8, 14, 17]
 
-// console.log(seleksiNilai(15, 3, [2, 25, 4, 14, 17, 30, 8]));
+console.log(seleksiNilai(15, 3, [2, 25, 4, 14, 17, 30, 8]));
 // Output:
 // “Nilai akhir harus lebih besar dari nilai awal”
 

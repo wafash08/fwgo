@@ -11,12 +11,16 @@ const nilai = [80, 82, 85, 81, 90];
 
 // 2. method reduce
 // digunakan untuk melakukan iterasi pada sebuah array dan pada setiap iterasi method ini akan memanggil callback function dan mengakumulasikan setiap item menjadi value tunggal
-// const totalNilai = nilai.reduce((previousValue, currentValue) => {
-// console.log('previousValue >> ', previousValue);
-// console.log('currentValue >> ', currentValue);
-// 	return previousValue + currentValue;
-// }, 0);
-// console.log(totalNilai);
+const namaKota = ['Bekasi', 'Jakarta', 'Tangerang'];
+const namaKotaWithO = namaKota.reduce((obj, currentValue, idx) => {
+	obj[`Kota ${idx + 1}`] = currentValue.replace('a', 'o');
+	return obj;
+	// if (idx === 0) {
+	// 	return currentValue;
+	// }
+	// return obj + '-' + currentValue;
+}, {});
+console.log(namaKotaWithO);
 
 // 3. method sort
 // digunakan untuk mengurutkan item-item dari sebuah array secara in-place dan mengembalikan referensi ke array yang sama dalam keadaan sudah terurut
@@ -47,13 +51,13 @@ const nilai = [80, 82, 85, 81, 90];
 // const isAboveTreshold = nilai.every(n => n > 75);
 // console.log(isAboveTreshold);
 
-const paragraph = 'saya senang belajar pemrograman';
+const paragraph = 'saya saya senang belajar pemrograman';
 
 // 8. method replace
 // digunakan untuk mengganti string yang cocok dengan pola yang diinginkan dan mengembalikan string baru
-// const paragraphBaru = paragraph.replace('saya', 'kami');
+const paragraphBaru = paragraph.replace('saya', 'kami');
 // console.log(paragraph);
-// console.log(paragraphBaru);
+console.log(paragraphBaru);
 
 // 9. method endsWith
 // digunakan untuk memeriksa apakah sebuah string berakhir dengan sebuah karakter tertentu
@@ -62,5 +66,5 @@ const paragraph = 'saya senang belajar pemrograman';
 
 // 10. method startsWith
 // digunakan untuk memeriksa apakah sebuah string dimulai dengan sebuah karakter tertentu
-// const startedWithSaya = paragraph.endsWith('Saya');
-// console.log(startedWithSaya);
+const startedWithSaya = paragraph.startsWith('saya');
+console.log(startedWithSaya);
