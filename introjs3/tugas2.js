@@ -1,3 +1,7 @@
+/*
+Buat program menggunakan callback function untuk melanjutkan
+dan menampilkan semua bulan menggunakan method map
+*/
 const getMonth = callback => {
 	setTimeout(() => {
 		let error = false;

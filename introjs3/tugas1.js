@@ -25,7 +25,7 @@ const cekHariKerja = day => {
 // 	.then(res => console.log(res))
 // 	.catch(err => console.log(err.message));
 /*
-blok kode then akan dieksekusi jika, dalam kasus ini, nama hari yang dimasukkan sebagai parameter termasuk dalam hari kerja (resolve). dan sebaliknya blok kode catch akan dieksekusi jika, dalam kasus ini, nama hari yang dimasukkan bukan hari kerja (reject)
+then catch merupakan salah satu cara untuk mengkonsumsi promise. blok kode then akan dieksekusi jika, dalam kasus ini, nama hari yang dimasukkan sebagai parameter termasuk dalam hari kerja (resolve). dan sebaliknya blok kode catch akan dieksekusi jika, dalam kasus ini, nama hari yang dimasukkan bukan hari kerja (reject)
 */
 
 async function main() {
@@ -38,7 +38,7 @@ async function main() {
 }
 
 /*
-blok kode try akan dieksekusi terlebih dahulu dan jika terjadi pengecualian (exception) maka blok kode catch akan dieksekusi.
+try catch juga merupakan salah satu cara mengkonsumsi promise bila digabungkan dengan kata kunci async await. blok kode try akan dieksekusi terlebih dahulu dan jika terjadi pengecualian (exception) maka blok kode catch akan dieksekusi.
 */
 
 main();
