@@ -28,11 +28,7 @@ function serveCoffe(coffeeName) {
 					new Error('Maaf, kopi yang anda pesan belum tersedia di toko kami')
 				);
 			} else {
-				const { name, quantity } = isCoffeeAvailable;
-				resolve({
-					name,
-					quantity,
-				});
+				resolve(isCoffeeAvailable);
 			}
 		}, 1000);
 	});
