@@ -14,8 +14,8 @@ function divideAndSort(n) {
 	return Number(
 		String(n)
 			.split('0')
-			.map(x =>
-				x
+			.map(number =>
+				number
 					.split('')
 					.sort((a, b) => a - b)
 					.join('')

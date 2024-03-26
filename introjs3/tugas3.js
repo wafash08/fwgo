@@ -36,9 +36,9 @@ function serveCoffe(coffeeName) {
 
 async function runServeCoffe() {
 	try {
-		const { name, quantity } = await serveCoffe('mdakmfa');
+		// const { name, quantity } = await serveCoffe('mdakmfa');
 		// const { name, quantity } = await serveCoffe('Latte');
-		// const { name, quantity } = await serveCoffe('Espresso');
+		const { name, quantity } = await serveCoffe('Espresso');
 		if (quantity === 0) {
 			return console.log(`Maaf kopi ${name} sudah habis`);
 		}

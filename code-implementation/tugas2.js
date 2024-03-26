@@ -33,7 +33,7 @@ SubTotal : 55250
 // 1 = 5 + 0 = 5;
 // didapatkan pola (n * 3) - 1, berlaku jika n >= 2
 
-function pijarFood(price, voucher = 'false', distance, tax) {
+function pijarFood(price, voucher, distance, tax) {
 	if (typeof price !== 'number' || typeof distance !== 'number') {
 		return 'price and distance have to be a number';
 	}
